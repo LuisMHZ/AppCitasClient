@@ -14,6 +14,7 @@ import { MemberDetailComponent } from './members/member-detail/member-detail.com
 import { ListsComponent } from './lists/lists.component';
 import { MessagesComponent } from './messages/messages.component';
 import { ShareModule } from './_modules/share.module';
+import { TestErrorComponent } from './errors/test-error/test-error.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ShareModule } from './_modules/share.module';
     MemberListComponent,
     MemberDetailComponent,
     ListsComponent,
-    MessagesComponent
+    MessagesComponent,
+    TestErrorComponent
   ],
   imports: [
     BrowserModule,
