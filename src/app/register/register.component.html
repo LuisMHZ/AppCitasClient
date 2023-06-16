@@ -5,41 +5,41 @@
     <div class="mb-3">
         <label style="margin-right:10px">Soy: </label>
         <label class="form-check-label">
-            <input type="radio" class="form-check-input" value="female" formControlName="gender"> Female
+            <input type="radio" class="form-check-input" value="female" formControlName="gender"> Mujer
         </label>
         <label class="form-check-label">
-            <input type="radio" class="form-check-input ms-3" value="male" formControlName="gender"> Male
+            <input type="radio" class="form-check-input ms-3" value="male" formControlName="gender"> Hombre
         </label>
     </div>
     
     <app-text-input
         [formControl]="$any(registerForm.controls['username'])"
-        [label]="'Username'">
+        [label]="'Usuario'">
     </app-text-input>
     <app-text-input
         [formControl]="$any(registerForm.controls['knownAs'])"
-        [label]="'Known As'">
+        [label]="'Nickname'">
     </app-text-input>
     <app-date-picker
         [formControl]="$any(registerForm.controls['dateOfBirth'])"
-        [label]="'Date Of Birth'" [maxDate]="maxDate">
+        [label]="'Fecha de Nacimiento'" [maxDate]="maxDate">
     </app-date-picker>
     <app-text-input
         [formControl]="$any(registerForm.controls['city'])"
-        [label]="'City'">
+        [label]="'Ciudad'">
     </app-text-input>
     <app-text-input
         [formControl]="$any(registerForm.controls['country'])"
-        [label]="'Country'">
+        [label]="'País'">
     </app-text-input>
     <app-text-input
         [formControl]="$any(registerForm.controls['password'])"
-        [label]="'Password'"
+        [label]="'Contraseña'"
         [type]="'password'">
     </app-text-input>
     <app-text-input
         [formControl]="$any(registerForm.controls['confirmPassword'])"
-        [label]="'Confirm Password'"
+        [label]="'Confirmar Contraseña'"
         [type]="'password'">
     </app-text-input>
 
@@ -52,7 +52,7 @@
     </div>
 
     <div class="text-center">
-        <button [disabled]="!registerForm.valid" class="btn btn-success me-2" type="submit">Register</button>
-        <button class="btn btn-default" type="button" (click)="cancel()">Cancel</button>
+        <button [disabled]="!registerForm.valid" class="btn btn-success me-2" type="submit">Registrarse</button>
+        <button class="btn btn-default" type="button" (click)="cancel()">Cancelar</button>
     </div>
 </form>
